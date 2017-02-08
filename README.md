@@ -34,5 +34,5 @@ python Case1.py
 ```
 
 Improvments:
-* Test case modulariy
+* Test case modularity
 * Reporting
