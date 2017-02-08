@@ -25,7 +25,7 @@ python testcase.py.robot
 
 Also raw test without any pageobject model is available
 
-#To run rqw test
+#To run raw test
 Navigate to Fyber_test/Tests
 
 ```
