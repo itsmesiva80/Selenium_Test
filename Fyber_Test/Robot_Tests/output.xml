@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170209 14:05:24.515" generator="Robot 3.0.1 (Python 2.7.13 on win32)">
+<suite source="C:\Users\user\Downloads\Fyber_Test\Robot_Tests\Demo_Test.robot" id="s1" name="Demo Test">
+<test id="s1-t1" name="Launch Application">
+<kw name="Open Home Page">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20170209 14:05:24.961" level="INFO">Opening browser 'Firefox' to base url 'http://www.imdb.com/chart/top'</msg>
+<status status="PASS" endtime="20170209 14:05:53.503" starttime="20170209 14:05:24.960"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20170209 14:05:53.627" starttime="20170209 14:05:53.504"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20170209 14:05:53.629" starttime="20170209 14:05:53.628"></status>
+</kw>
+<status status="PASS" endtime="20170209 14:05:53.630" starttime="20170209 14:05:24.959"></status>
+</kw>
+<kw name="Verify Title">
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>${TITLE}</arg>
+</arguments>
+<msg timestamp="20170209 14:05:54.088" level="INFO">Page title is 'IMDb Top 250 - IMDb'.</msg>
+<status status="PASS" endtime="20170209 14:05:54.088" starttime="20170209 14:05:53.632"></status>
+</kw>
+<status status="PASS" endtime="20170209 14:05:54.089" starttime="20170209 14:05:53.631"></status>
+</kw>
+<status status="PASS" endtime="20170209 14:05:54.091" critical="yes" starttime="20170209 14:05:24.957"></status>
+</test>
+<test id="s1-t2" name="Verify Movies listed By Default">
+<kw name="Verify Number Of Movies Displayed">
+<kw name="Table Should Contain" library="Selenium2Library">
+<doc>Verifies that `expected` can be found somewhere in the table.</doc>
+<arguments>
+<arg>xpath=//table[@data-caller-name='chart-top250movie']/tbody/tr|count</arg>
+<arg>250</arg>
+</arguments>
+<status status="PASS" endtime="20170209 14:06:42.953" starttime="20170209 14:05:54.098"></status>
+</kw>
+<status status="PASS" endtime="20170209 14:06:42.953" starttime="20170209 14:05:54.097"></status>
+</kw>
+<status status="PASS" endtime="20170209 14:06:42.960" critical="yes" starttime="20170209 14:05:54.094"></status>
+</test>
+<status status="PASS" endtime="20170209 14:06:42.965" starttime="20170209 14:05:24.524"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="2">Critical Tests</stat>
+<stat fail="0" pass="2">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Demo Test" pass="2">Demo Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
